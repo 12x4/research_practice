@@ -28,16 +28,16 @@ def gcdex(a, b):
 
 def modular_exp(a, b, n):
 
-    ai = 1
-    a = a % n
-    while b > 0:
-        if b & 1:
-            ai = (ai * a) % n
-        b = b >> 1
-        a = a ** 2 % n
+    # ai = 1
+    # a = a % n
+    # while b > 0:
+    #     if b & 1:
+    #         ai = (ai * a) % n
+    #     b = b >> 1
+    #     a = a ** 2 % n
 
-    return ai
-
+    # return ai
+    return pow(a, b, n)
 
 def gen_two_prime_num(bit_count=16):
 
