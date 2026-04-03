@@ -20,6 +20,9 @@ class RSA:
     def __init__(self, bit_count=16):
 
         # init data
+        if bit_count <= 2:
+            raise ValueError("Смешно")
+
         self.bit_count = bit_count
         self.public_key = None
         self.private_key = None
@@ -37,6 +40,7 @@ class RSA:
         # generate p and q
         num_p, num_q = gen_two_prime_num(bit_count=self.bit_count)
         num_n = num_p * num_q
+        # print((num_n.bit_length() + 7) // 8)
         phi = (num_p - 1) * (num_q - 1)
 
 

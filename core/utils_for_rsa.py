@@ -40,6 +40,8 @@ def modular_exp(a, b, n):
     return pow(a, b, n)
 
 def gen_two_prime_num(bit_count=16):
+    if bit_count <= 2:
+        raise ValueError("Смешно")
 
     num1 = None
     while True:
