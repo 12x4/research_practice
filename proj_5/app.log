@@ -1,0 +1,16 @@
+2026-05-06 22:51:59,349 - INFO - (865692847, 2962993723), (2192777143, 2962993723)
+2026-05-06 22:51:59,349 - INFO - bytearray(b'\xb0\x9b\xb2;')
+2026-05-06 22:51:59,349 - INFO - meth_before:1 meth_after:1
+2026-05-06 22:51:59,349 - DEBUG - [bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL')]
+2026-05-06 22:51:59,349 - DEBUG - [bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL')]
+2026-05-06 22:51:59,349 - DEBUG - [4931917, 4803616, 4931917, 4803616, 4931917, 4803616, 4931917, 4803616, 4931917, 18764]
+2026-05-06 22:51:59,349 - DEBUG - [44388080, 1399000561, 44388080, 1399000561, 44388080, 1399000561, 44388080, 1399000561, 44388080, 2151253664]
+2026-05-06 22:51:59,349 - DEBUG - [bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'\x809\x86\xa0')]
+2026-05-06 22:51:59,349 - INFO - Закончил шифровку KAMIL KAMIL KAMIL KAMIL KAMIL
+2026-05-06 22:51:59,349 - DEBUG - bytearray(b'\x02\xa5N\xf0Sc\r\xf1\x02\xa5N\xf0Sc\r\xf1\x02\xa5N\xf0Sc\r\xf1\x02\xa5N\xf0Sc\r\xf1\x02\xa5N\xf0\x809\x86\xa0')
+2026-05-06 22:51:59,349 - DEBUG - [bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'Sc\r\xf1'), bytearray(b'\x02\xa5N\xf0'), bytearray(b'\x809\x86\xa0')]
+2026-05-06 22:51:59,349 - DEBUG - [44388080, 1399000561, 44388080, 1399000561, 44388080, 1399000561, 44388080, 1399000561, 44388080, 2151253664]
+2026-05-06 22:51:59,349 - DEBUG - [4931917, 4803616, 4931917, 4803616, 4931917, 4803616, 4931917, 4803616, 4931917, 18764]
+2026-05-06 22:51:59,358 - DEBUG - [bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL')]
+2026-05-06 22:51:59,358 - DEBUG - [bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL '), bytearray(b'KAM'), bytearray(b'IL')]
+2026-05-06 22:51:59,358 - INFO - Закончил расшифровку KAMIL KAMIL KAMIL KAMIL KAMIL
