@@ -20,7 +20,7 @@ class cipher_4(cipher_3):
 
     def __init__(self, rsa_key, meth_before=1, meth_after=1):
 
-        if rsa_key.public_key.module.bit_length() < 10:
+        if rsa_key.public_key.module.bit_length() < 16:
             logging.error("Слишком маленький ключ")
             raise ValueError("Слишком маленький ключ")
         super().__init__(rsa_key)

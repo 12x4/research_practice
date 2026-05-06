@@ -2,7 +2,7 @@ import unittest
 from main import cipher_4
 from core.rsa import RSA
 
-arr_key_bits = [6, 8, 16, 32, 64]
+arr_key_bits = [16, 32, 64]
 arr_text = ["hell", "hello oo", """In this noncompliant code example, """]
 
 

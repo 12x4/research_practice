@@ -28,18 +28,19 @@ class RSA:
         self.private_key = None
 
         # generate keys
-        self.generate_key()
+        flag = self.generate_key()
 
         while True:
-            if self.test_for_correctness():
+            if self.test_for_correctness() and flag:
                 break
             else:
-                self.generate_key()
+                flag = self.generate_key()
 
     def generate_key(self):
         # generate p and q
-        num_p, num_q = gen_two_prime_num(bit_count=self.bit_count)
+        num_p, num_q = gen_two_prime_num(bit_count=self.bit_count // 2)
         num_n = num_p * num_q
+
         # print((num_n.bit_length() + 7) // 8)
         phi = (num_p - 1) * (num_q - 1)
 
@@ -56,6 +57,8 @@ class RSA:
         self.public_key = key(num_e, num_n)
         self.private_key = key(num_d, num_n)
 
+        return num_n.bit_length() == self.bit_count
+
     def test_for_correctness(self):
 
         test_code = 1234
@@ -63,9 +66,7 @@ class RSA:
         encrypted = modular_exp(test_code, self.public_key.degree, self.public_key.module)
         decrypted = modular_exp(encrypted, self.private_key.degree, self.private_key.module)
 
-        if test_code == decrypted:
-            return True
-        return False
+        return test_code == decrypted
 
     def get_private_key(self):
         return self.private_key

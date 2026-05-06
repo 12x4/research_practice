@@ -1,5 +1,6 @@
 import secrets
 import math
+from sympy import isprime
 
 
 def gen_num(bit_count=16):
@@ -46,13 +47,13 @@ def gen_two_prime_num(bit_count=16):
     num1 = None
     while True:
         num1 = gen_num(bit_count)
-        if miller_rabin(num1):
+        if isprime(num1) and num1.bit_length() == bit_count:
             break
 
     num2 = None
     while True:
         num2 = gen_num(bit_count)
-        if miller_rabin(num2):
+        if isprime(num2) and num2.bit_length() == bit_count:
             break
 
 
