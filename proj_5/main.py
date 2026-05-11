@@ -204,7 +204,6 @@ class cipher_5(cipher_4):
         logging.info(f"Закончил расшифровку {enc_text}")
         return enc_text
 
-
 if __name__ == "__main__":
     rsa = RSA(32)
 
