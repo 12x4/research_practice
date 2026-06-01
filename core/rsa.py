@@ -23,14 +23,21 @@ class RSA:
         if bit_count <= 2:
             raise ValueError("Смешно")
 
+        if bit_count % 2 == 1:
+            raise ValueError("Это уже не смешно")
+
         self.bit_count = bit_count
         self.public_key = None
         self.private_key = None
+
+        self.iter_count = 0
 
         # generate keys
         flag = self.generate_key()
 
         while True:
+            self.iter_count += 1
+
             if self.test_for_correctness() and flag:
                 break
             else:
@@ -48,6 +55,7 @@ class RSA:
         # find e
         num_e = secrets.randbelow(phi)
         while gcd(num_e, phi) != 1:
+            self.iter_count += 1
             num_e = secrets.randbelow(phi)
 
         # find d

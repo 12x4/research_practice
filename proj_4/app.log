@@ -1,0 +1,4 @@
+2026-05-30 00:07:59,892 - INFO - (1512364933, 2745355051), (2382375997, 2745355051)
+2026-05-30 00:07:59,892 - INFO - bytearray(b'\xa3\xa2\xcb+')
+2026-05-30 00:07:59,892 - INFO - meth_before:3 meth_after:1
+2026-05-30 00:07:59,892 - DEBUG - [bytearray(b'cha'), bytearray(b'-ch'), bytearray(b'a-2'), bytearray(b'0')]

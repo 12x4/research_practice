@@ -205,11 +205,11 @@ class cipher_5(cipher_4):
         return enc_text
 
 if __name__ == "__main__":
-    rsa = RSA(32)
+    rsa = RSA(16)
 
-    cipher = cipher_5(rsa, encoding="windows-1251")
+    cipher = cipher_5(rsa, encoding="utf-8")
 
-    text = "KAMIL KAMIL KAMIL KAMIL KAMIL"
+    text = "камиль бум бум бум бум"
 
     encrypt = cipher.encrypt_blocks(text)
     print(encrypt)

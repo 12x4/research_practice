@@ -49,6 +49,9 @@ class cipher_4(cipher_3):
     # Шифрование блоками
     def encrypt_blocks(self, plaintext):
 
+        if plaintext == "":
+            return bytearray()
+
         block_size = byte_size(self.key.public_key.module) - 1
 
         # mass_byte = bytearray(plaintext, "utf8")
@@ -141,6 +144,9 @@ class cipher_4(cipher_3):
     # Расшифровка блоками
     def decrypt_blocks(self, ciphertext):
 
+        if len(ciphertext) == 0:
+            return ""
+
         block_size = byte_size(self.key.private_key.module) - 1
 
         # Конверт строки в массив байтов
@@ -226,8 +232,6 @@ class cipher_4(cipher_3):
     # Обработка групп перед шифрованием метод 2
     def proc_group_before_enc_2(self, mass_byte_blocks, len_block=None):
         temp_byte = int(self.to_bytes(self.key.public_key.module)[0])
-
-
 
         for ind in range(0, len(mass_byte_blocks) - 1):
             mass_byte_blocks[ind].insert(0, random.randint(1,temp_byte - 1))
@@ -431,10 +435,10 @@ class cipher_4(cipher_3):
 
 def main():
 
-    key = RSA(16)
-    cip = cipher_4(key, 2, 1)
+    key = RSA(32)
+    cip = cipher_4(key, 3, 1)
 
-    text = "In this noncompliant code example, "
+    text = "cha-cha-20"
 
     enc_text = cip.encrypt_blocks(text)
     print(enc_text, len(enc_text))

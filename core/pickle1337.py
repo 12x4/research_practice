@@ -169,6 +169,9 @@ class Pickle1337:
 
                 redump_list.append(new_file)
 
+            else:
+                pass
+
             if cursor > len(data):
                 raise Exception("Невозможно десериализовать объекты")
             # cursor += 1

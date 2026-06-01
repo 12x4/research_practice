@@ -1,5 +1,6 @@
 import random
-
+from core.cipher import cipher_4
+from core.rsa import RSA
 import codecs
 
 # from core.utils_for_rsa import gen_two_prime_num
@@ -19,7 +20,23 @@ import codecs
 # cip = cipher_3(rsa)
 # print(cip.to_bytes(n))
 
-a = codecs.getencoder("windows-1251")
-print(a)
+# a = codecs.getencoder("windows-1251")
+# print(a)
+
+
+rsa = RSA(16)
+a = cipher_4(rsa)
+
+num = 258
+
+b1 = a.to_bytes(num, 5)
+print(b1)
+b2 = a.from_bytes(b1)
+print(b2)
+
+
+
+
+
 
 

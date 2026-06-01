@@ -196,7 +196,7 @@ def main():
 
     # for i in test:
     #     print(ord(i))
-    rsa_key = RSA(64)
+    rsa_key = RSA(128)
     cip = cipher_3(rsa_key)
     print(rsa_key.public_key)
 
